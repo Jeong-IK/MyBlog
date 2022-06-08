@@ -1,14 +1,14 @@
 import React from "react";
 import { Header } from "./Header/Header";
 import { MainBody } from "./Body/MainBody";
-import { BgImg } from "./BgIMG/BgIMG";
+import { Background_Img } from "./BgIMG_style";
+
 function App() {
   return (
-    <div>
-      <BgImg />
+    <Background_Img>
       <Header />
       <MainBody />
-    </div>
+    </Background_Img>
   );
 }
 
