@@ -5,4 +5,7 @@ export const Logo = styled.div`
   font-size: 1.5em;
   text-align: left;
   padding: 10px;
+  letter-spacing: 2px;
+  color: red;
+  font-family: "Rajdhani";
 `;
