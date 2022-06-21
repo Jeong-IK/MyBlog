@@ -1,11 +1,20 @@
-import { Menu, List } from "./MenuList_style";
+import { Menu, List, Menues } from "./MenuList_style";
 import { Link } from "react-router-dom";
+
 export const MenuList = () => {
   return (
     <List>
-      <Link to="/">자기소개</Link>
-      <Link to="/Project">프로젝트</Link>
-      <Link to="/Sns">SNS</Link>
+      <Menues>
+        <Menu>
+          <Link to="/">자기소개</Link>
+        </Menu>
+        <Menu>
+          <Link to="/Project">프로젝트</Link>
+        </Menu>
+        <Menu>
+          <Link to="/Sns">SNS</Link>
+        </Menu>
+      </Menues>
     </List>
   );
 };
