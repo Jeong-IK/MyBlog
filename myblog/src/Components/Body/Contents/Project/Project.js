@@ -2,7 +2,6 @@ import { useState, useEffect, Fragment } from "react";
 import { Card } from "./Card";
 
 export const Project = () => {
-  //const accessToken = "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";
   const [project, setProject] = useState(null);
 
   useEffect(() => {
