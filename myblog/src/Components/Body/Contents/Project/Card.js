@@ -5,6 +5,6 @@ export const Card = (props) => {
     <Fragment key={props.name}>
       <h1>{props.name}</h1>
       <h1>{props.full_name}</h1>
-    </Fragment>ㅎ
+    </Fragment>
   );
 };
