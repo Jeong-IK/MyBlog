@@ -1,5 +1,5 @@
 import { useState, useEffect, Fragment } from "react";
-import { Card } from "./Card";
+import { CardMenu } from "./Card";
 
 export const Project = () => {
   const [project, setProject] = useState(null);
@@ -16,7 +16,7 @@ export const Project = () => {
     <>
       {project &&
         project.map((element) => {
-          return <Card name={element.name} full_name={element.full_name} />;
+          return <CardMenu name={element.name} full_name={element.full_name} />;
         })}
     </>
   );

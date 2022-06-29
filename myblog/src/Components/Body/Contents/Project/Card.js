@@ -1,10 +1,10 @@
-import { Fragment } from "react";
+import { Card } from "./Project_style";
 
-export const Card = (props) => {
+export const CardMenu = (props) => {
   return (
-    <Fragment key={props.name}>
-      <h1>{props.name}</h1>
-      <h1>{props.full_name}</h1>
-    </Fragment>
+    <Card key={props.name}>
+      {props.name}
+      {props.full_name}
+    </Card>
   );
 };

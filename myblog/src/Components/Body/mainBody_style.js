@@ -8,5 +8,5 @@ export const Body = styled.div`
   left: 50%;
   bottom: 0%;
   transform: translate(-50%, 0%);
-  border-radius: 10px;
+  border-radius: 10px 10px;
 `;
