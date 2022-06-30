@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Profile = () => {
+export default const Profile = () => {
   return <h1>Profile</h1>;
 };
