@@ -1,8 +1,8 @@
-import { Menu, List, Menues } from "./MenuList_style";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Menu, List, Menues } from './MenuList_style';
 
-export const MenuList = () => {
-  return (
+export const MenuList = () => (
     <List>
       <Menues>
         <Menu>
@@ -16,5 +16,4 @@ export const MenuList = () => {
         </Menu>
       </Menues>
     </List>
-  );
-};
+);

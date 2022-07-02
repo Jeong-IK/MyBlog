@@ -1,11 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled from 'styled-components';
 
-export const Globalstyle = createGlobalStyle`
-body{
-  margin:0px;
-}`;
-
-export const Background_Img = styled.div`
+export const BackgroundImg = styled.div`
   position: absolute;
   background-color: pink;
   top: 0;

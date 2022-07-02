@@ -1,17 +1,17 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { Header } from "./Header/Header";
-import { MainBody } from "./Body/MainBody";
-import { Background_Img } from "./BgIMG_style";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Header } from './Header/header';
+import { MainBody } from './Body/mainBody';
+import { BackgroundImg } from './BgIMG_style';
 
 function App() {
   return (
-    <Background_Img>
+    <BackgroundImg>
       <BrowserRouter>
         <Header />
         <MainBody />
       </BrowserRouter>
-    </Background_Img>
+    </BackgroundImg>
   );
 }
 

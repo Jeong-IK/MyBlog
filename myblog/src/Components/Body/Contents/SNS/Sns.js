@@ -1,5 +1,3 @@
-import React from "react";
+import React from 'react';
 
-export const Sns = () => {
-  return <h1>SNS</h1>;
-};
+export const Sns = () => <h1>SNS</h1>;
