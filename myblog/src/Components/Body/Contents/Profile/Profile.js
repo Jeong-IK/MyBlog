@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
-export default const Profile = () => {
-  return <h1>Profile</h1>;
-};
+export const Profile = () => {
+    return <h1>Profile</h1>;
+}
