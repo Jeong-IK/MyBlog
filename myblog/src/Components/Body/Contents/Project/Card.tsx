@@ -1,13 +1,13 @@
-import { projectType } from "./Project";
+import { projectType } from './Project';
 
-type propjectProps ={
-  name : projectType
-}
+type propjectProps = {
+    name: projectType;
+};
 
-export const Card = (props : propjectProps) => {
+export const Card = (props: propjectProps) => {
     return (
-    <>
-      <p>{props.name}</p>
-    </>
-    )
-  }
+        <>
+            <p>{props.name}</p>
+        </>
+    );
+};
