@@ -16,8 +16,19 @@ module.exports = {
     'react',
   ],
   rules: {
+    'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     // 운영체제 마다 개행 차이로 생기는 오류
     'linebreak-style': 0,
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 };

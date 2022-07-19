@@ -11,11 +11,11 @@ interface Error {
   status: 'error';
 }
 
-export type Project_Service<T> = {
-  Loading: Loading;
-  Success: Success<T>;
-  Error: Error;
-};
+export type ProjectService<T> = 
+  | Loading 
+  | Success<T> 
+  | Error;
+
 
 export interface ProjectType {
   name: string;
