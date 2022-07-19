@@ -12,11 +12,11 @@ export const Project = () => {
 
   useEffect(() => {
     fetch('https://api.github.com/users/Jeong-IK/repos')
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         setProject({
           status: 'success',
-          data: data
+          data,
         });
       })
       .catch(() => setProject({ status: 'error' }));
