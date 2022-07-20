@@ -12,8 +12,8 @@ export const Project = () => {
 
   useEffect(() => {
     fetch('https://api.github.com/users/Jeong-IK/repos')
-      .then((res) => res.json())
-      .then((data) => {
+      .then(res => res.json())
+      .then(data => {
         setProject({
           status: 'success',
           data,
@@ -22,9 +22,5 @@ export const Project = () => {
       .catch(() => setProject({ status: 'error' }));
   }, []);
 
-  return (
-    <>
-      {project && console.log(project)}
-    </>
-  );
+  return <>{project && console.log(project)}</>;
 };
