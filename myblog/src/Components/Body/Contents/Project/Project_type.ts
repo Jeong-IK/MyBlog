@@ -2,20 +2,16 @@ interface Loading {
   status: 'loading';
 }
 
-interface Success<T> {
+interface Success {
   status: 'success';
-  data: T;
+  result: ProjectType[];
 }
 
 interface Error {
   status: 'error';
 }
 
-export type ProjectService<T> = 
-  | Loading 
-  | Success<T> 
-  | Error;
-
+export type ProjectService = Loading | Success | Error;
 
 export interface ProjectType {
   name: string;

@@ -1,9 +1,1 @@
-
-
-export const Card = () => {
-    return (
-        <>
-            <p></p>
-        </>
-    );
-};
+export const Card = () => {};

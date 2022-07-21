@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { ProjectService, ProjectType } from './Project_type';
-
-export interface projectArray {
-  datas: ProjectType[];
-}
+import { ProjectService } from './Project_type';
 
 export const Project = () => {
-  const [project, setProject] = useState<ProjectService<projectArray>>({
+  const [project, setProject] = useState<ProjectService>({
     status: 'loading',
   });
 
@@ -16,11 +12,18 @@ export const Project = () => {
       .then(data => {
         setProject({
           status: 'success',
-          data,
+          result: data,
         });
       })
       .catch(() => setProject({ status: 'error' }));
   }, []);
 
-  return <>{project && console.log(project)}</>;
+  return (
+    <>
+      {project.status === 'success' &&
+        project.result.map(prop => {
+          console.log(prop.name);
+        })}
+    </>
+  );
 };
