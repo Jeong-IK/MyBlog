@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ProjectService } from './Project_type';
-
+import { ProjectService, ProjectType } from './Project_type';
+import { Card } from './Card';
 export const Project = () => {
   const [project, setProject] = useState<ProjectService>({
     status: 'loading',
@@ -21,8 +21,8 @@ export const Project = () => {
   return (
     <>
       {project.status === 'success' &&
-        project.result.map(prop => {
-          console.log(prop.name);
+        project.result.map((prop: ProjectType) => {
+          <Card />;
         })}
     </>
   );
