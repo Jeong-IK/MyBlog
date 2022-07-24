@@ -1,18 +1,8 @@
-interface Loading {
-  status: 'loading';
+export interface RepositoryStatus {
+  status: 'Loading' | 'Success' | 'Error';
 }
 
-interface Success {
-  status: 'success';
-  result: ProjectType[];
-}
-
-interface Error {
-  status: 'error';
-}
-
-export type ProjectService = Loading | Success | Error;
-
-export interface ProjectType {
+export interface repositoryData {
   name: string;
 }
+export interface resultArr extends Array<repositoryData> {}

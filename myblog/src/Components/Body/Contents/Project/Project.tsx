@@ -1,29 +1,36 @@
 import React, { useState, useEffect } from 'react';
-import { ProjectService, ProjectType } from './Project_type';
-import { Card } from './Card';
+import { RepositoryStatus, resultArr } from './Project_type';
+import { RepositoryCard } from './RepositoryCard';
+
 export const Project = () => {
-  const [project, setProject] = useState<ProjectService>({
-    status: 'loading',
+  // responseStatus
+  const [repository, setRepository] = useState<RepositoryStatus>({
+    status: 'Loading',
   });
 
+  // responseData
+  const [data, repositoryData] = useState<resultArr>([]);
+
+  // async await
   useEffect(() => {
     fetch('https://api.github.com/users/Jeong-IK/repos')
       .then(res => res.json())
       .then(data => {
-        setProject({
-          status: 'success',
-          result: data,
+        setRepository({
+          status: 'Success',
         });
+        repositoryData(data);
       })
-      .catch(() => setProject({ status: 'error' }));
+      //에러 코드 파싱
+      .catch(() => setRepository({ status: 'Error' }));
   }, []);
 
   return (
     <>
-      {project.status === 'success' &&
-        project.result.map((prop: ProjectType) => {
-          <Card />;
-        })}
+      {repository.status === 'Success' &&
+        data.map(result => (
+          <RepositoryCard name={result.name} key={result.name}></RepositoryCard>
+        ))}
     </>
   );
 };
