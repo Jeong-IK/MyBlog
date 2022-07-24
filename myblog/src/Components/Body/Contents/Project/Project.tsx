@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectService, ProjectType } from './Project_type';
 import { Card } from './Card';
+
 export const Project = () => {
   const [project, setProject] = useState<ProjectService>({
     status: 'loading',
