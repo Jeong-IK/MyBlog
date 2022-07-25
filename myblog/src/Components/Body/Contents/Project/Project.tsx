@@ -22,7 +22,7 @@ export const Project = () => {
     <>
       {project.status === 'success' &&
         project.result.map((prop: ProjectType) => {
-          <Card />;
+          <Card name=prop.name/>
         })}
     </>
   );

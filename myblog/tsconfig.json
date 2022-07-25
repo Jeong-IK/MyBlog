@@ -104,5 +104,5 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "lib": ["DOM", "DOM.Iterable", "ESNext"]
   },
-  "include": ["src/**.ts"]
+  "include": ["src/**.ts", "src/index.tsx"]
 }
