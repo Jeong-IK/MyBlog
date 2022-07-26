@@ -4,7 +4,7 @@ import { Header } from './Header/Header';
 import { MainBody } from './Body/mainBody';
 import { BackgroundImg } from './BgIMG_style';
 
-function App() {
+const App = () => {
   return (
     <BackgroundImg>
       <BrowserRouter>
@@ -13,6 +13,6 @@ function App() {
       </BrowserRouter>
     </BackgroundImg>
   );
-}
+};
 
 export default App;
