@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { RepositoryStatus, resultArr } from './Project_type';
 import { RepositoryCard } from './RepositoryCard';
-import {CardList} from './Project_style';
+import {CardList, Github_data} from './Project_style';
+import {ReadMe} from './ReadMe';
 
 export const Project = () => {
   // responseStatus
@@ -27,11 +28,14 @@ export const Project = () => {
   }, []);
 
   return (
-    <CardList>
-      {repository.status === 'Success' &&
-        data.map(result => (
-          <RepositoryCard name={result.name} key={result.name}></RepositoryCard>
-        ))}
-    </CardList>
+    <Github_data>
+      <CardList>
+        {repository.status === 'Success' &&
+          data.map(result => (
+            <RepositoryCard name={result.name} key={result.name} />
+          ))}
+      </CardList>
+      <ReadMe></ReadMe>
+    </Github_data>
   );
 };
