@@ -9,7 +9,7 @@ justify-content: center;
 align-items: center;
 `;
 
-export const Github_data = styled.div`
+export const GithubData = styled.div`
 display:flex;
 
 
