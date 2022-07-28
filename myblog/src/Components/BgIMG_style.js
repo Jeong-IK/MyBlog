@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 export const BackgroundImg = styled.div`
-  position: absolute;
-  background-color: pink;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
   height: 100vh;
-  background-image: url(https://source.unsplash.com/random/1920x1080);
+  overflow: hidden;
+  background-color:Green;
   background-size: cover;
 `;
