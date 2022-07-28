@@ -4,10 +4,13 @@ export const List = styled.div`
   display: flex;
   float: right;
   display: inline-block;
+  position: fixed;
+  right:0;
 `;
 
 export const Menues = styled.ul`
   display: flex;
+  flex-flow: flex-end;
 `;
 
 export const Menu = styled.li`
