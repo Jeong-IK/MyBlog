@@ -8,4 +8,7 @@ export const Body = styled.div`
   position:fixed;
   top:30vh;
   left:15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 `;
