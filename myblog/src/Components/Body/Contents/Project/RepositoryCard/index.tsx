@@ -1,11 +1,9 @@
 import React, { FunctionComponent } from 'react';
-import { repositoryData } from '../Project_type';
+import { RepositoryData } from '../Project_type';
 import { Card, ReposeName } from './RepositoryCard_style';
 
-export const RepositoryCard: FunctionComponent<repositoryData> = props => {
-  return (
+export const RepositoryCard: FunctionComponent<RepositoryData> = ({ name }) => (
   <Card>
-    <ReposeName>{props.name}</ReposeName>
+    <ReposeName>{name}</ReposeName>
   </Card>
-  );
-};
+);

@@ -2,7 +2,8 @@ export interface RepositoryStatus {
   status: 'Loading' | 'Success' | 'Error';
 }
 
-export interface repositoryData {
+export interface RepositoryData {
   name: string;
 }
-export interface resultArr extends Array<repositoryData> {}
+
+export interface ResultArr extends Array<RepositoryData> {}

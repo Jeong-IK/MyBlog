@@ -6,11 +6,11 @@ import { Project } from './Contents/Project/Project';
 import { Sns } from './Contents/SNS/Sns';
 
 export const MainBody = () => (
-    <Body>
-      <Routes>
-        <Route exact path="/" element={<Profile />} />
-        <Route path="/Project" element={<Project />} />
-        <Route path="/Sns" element={<Sns />} />
-      </Routes>
-    </Body>
+  <Body>
+    <Routes>
+      <Route path="/" element={<Profile />} />
+      <Route path="/Project" element={<Project />} />
+      <Route path="/Sns" element={<Sns />} />
+    </Routes>
+  </Body>
 );
