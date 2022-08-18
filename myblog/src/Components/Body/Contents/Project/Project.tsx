@@ -13,6 +13,8 @@ export const Project = () => {
   // responseData
   const [data, repositoryData] = useState<ResultArr>([]);
 
+  /* const [reposname, Choosereposename] = useState<string>(''); */
+
   // async await
   useEffect(() => {
     fetch('https://api.github.com/users/Jeong-IK/repos')
@@ -35,7 +37,7 @@ export const Project = () => {
             <RepositoryCard name={result.name} key={result.name} />
           ))}
       </CardList>
-      <ReadMe name="" />
+      <ReadMe name="Issue" />
     </>
   );
 };

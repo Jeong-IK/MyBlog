@@ -2,9 +2,9 @@ import React, { FunctionComponent, useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { ReviewData } from './ReadMe_style';
 import { Fetchstatus, ReadMeData } from './ReadMe_type';
-import { RepositoryData } from '../Project_type';
+import { RepositoryName } from '../Project_type';
 
-export const ReadMe: FunctionComponent<RepositoryData> = ({ name }) => {
+export const ReadMe: FunctionComponent<RepositoryName> = ({ name }) => {
   const [repository, setRepository] = useState<Fetchstatus>({
     status: 'Loading',
   });

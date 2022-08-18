@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
+export const Card = styled.button`
   height: 3.5rem;
   width: 15rem;
-  border-radius: 5px;
+  border-radius: 1px;
   display: flex;
   margin: 15px;
   position: relative;

@@ -7,3 +7,7 @@ export interface RepositoryData {
 }
 
 export interface ResultArr extends Array<RepositoryData> {}
+
+export interface RepositoryName {
+  name: string;
+}
