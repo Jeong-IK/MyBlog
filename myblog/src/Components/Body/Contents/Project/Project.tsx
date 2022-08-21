@@ -32,8 +32,8 @@ export const Project = () => {
   return (
     <>
       <CardList>
-        {repository.status === 'Success'
-          && data.map((result: RepositoryData) => (
+        {repository.status === 'Success' &&
+          data.map((result: RepositoryData) => (
             <RepositoryCard name={result.name} key={result.name} />
           ))}
       </CardList>

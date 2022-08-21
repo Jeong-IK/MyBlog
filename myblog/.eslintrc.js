@@ -17,7 +17,6 @@ module.exports = {
       jsx: true,
     },
     project: './tsconfig.json',
-    tsconfigRootDir: __dirname,
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
@@ -28,6 +27,7 @@ module.exports = {
       2,
       { namedComponents: 'arrow-function' },
     ],
+    'operator-linebreak' : ['error', 'after'],
   },
   settings: {
     'import/resolver': {

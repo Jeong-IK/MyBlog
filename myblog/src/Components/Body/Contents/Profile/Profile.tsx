@@ -1,3 +1,4 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
-export const Profile = () => <h1>Profile</h1>;
+export const Profile = () => <ReactMarkdown># Profile \n ## Name</ReactMarkdown>;

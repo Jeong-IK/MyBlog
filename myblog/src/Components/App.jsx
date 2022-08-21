@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { Header } from './Header/Header';
+import { Header } from './Header/header';
 import { MainBody } from './Body/mainBody';
 import { BackgroundImg } from './BgIMG_style';
 

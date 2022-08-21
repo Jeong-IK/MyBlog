@@ -11,19 +11,17 @@ export const ReadMe: FunctionComponent<RepositoryName> = ({ name }) => {
   const [projectReview, Setproreview] = useState<ReadMeData>({ content: '' });
 
   useEffect(() => {
-    fetch(`https://api.github.com/repos/Jeong-IK/${name}readme`)
+    fetch(`https://api.github.com/repos/Jeong-IK/${name}/readme`)
       .then((res) => res.json())
-      .then((data: string) => {
-        Setproreview({ content: data });
+      .then((data: ReadMeData) => {
+        Setproreview({ content: atob(data.content) });
       })
       .catch(() => setRepository({ status: 'Error' }));
   }, [name]);
 
   return (
     <ReviewData>
-      {repository.status === 'Success' && (
-        <ReactMarkdown>{projectReview.content}</ReactMarkdown>
-      )}
+      {repository.status === 'Success' && <ReactMarkdown>{projectReview.content}</ReactMarkdown>}
     </ReviewData>
   );
 };
